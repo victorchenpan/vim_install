@@ -54,17 +54,18 @@ nmap <C-i> :tabnew ~/source<CR>
    let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
    let g:winManagerWidth = 30
    let g:defaultExplorer = 0
-   nmap  wm :WMToggle<cr> 
+   "nmap  wm :WMToggle<cr>
+   nmap <silent> <F8> :WMToggle<cr>
 "map <c-k> :FirstExplorerWindow<cr>
 "map <c-l> :BottomExplorerWindow<cr>
 map <c-l> <c-w><c-l>
 map <c-h> <c-w><c-h>
 map <c-j> <c-w><c-j>
 map <c-k> <c-w><c-k>
-map <wm> :WMToggle<cr>
+"map <wm> :WMToggle<cr>
 "nmap <F8> :wa:TlistUpdate
 ":FirstExplorerWindowb
-:set backspace=indent,eol,start
+set backspace=indent,eol,start
 let counter = 0
 "inoremap <expr> <C-L> ListItem() 
 "inoremap <expr> <C-R> ListReset()
