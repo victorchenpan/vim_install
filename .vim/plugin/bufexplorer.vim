@@ -93,7 +93,7 @@ function s:Setup()
   let s:tabSpace = []
 
   " Now that the MRUList is created, add the other autocmds.
-  autocmd BufEnter,BufNew * call s:ActivateBuffer()
+  " autocmd BufEnter,BufNew * call s:ActivateBuffer()
   autocmd BufWipeOut * call s:DeactivateBuffer(1)
   autocmd BufDelete * call s:DeactivateBuffer(0)
 
